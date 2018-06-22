@@ -4,6 +4,8 @@
   "description": "A plain html ecommerce example based on https://themeforest.net/item/polystar-responsive-bigcommerce-theme/21413748",
   "main": "index.js",
   "scripts": {
+    "build-pages": "node ./build_scripts/builder.js",
+    "start": "concurrently --kill-others \"nodemon -e js,json,css,md -i build -x \\\"npm run build-pages\\\"\" \"live-server ./build\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Stuart Homfray",
