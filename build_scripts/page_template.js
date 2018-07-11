@@ -43,7 +43,7 @@ module.exports = {
   defaultMeta: {
     lang: 'en',
     title: 'A Page',
-    stylesheets: ['./css/style.css'],
+    stylesheets: ['./css/pages.css'],
     scripts: ['./js/main.js'],
     charset: 'utf-8',
     description: 'This is a page',
